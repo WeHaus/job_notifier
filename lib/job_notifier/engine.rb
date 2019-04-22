@@ -16,7 +16,7 @@ module JobNotifier
       require_relative "./adapters"
       require_relative "./logger"
 
-      ActiveSupport.on_load :action_controller do
+      ActiveSupport.on_load :action_controller_base do
         helper(JobNotifier::ApplicationHelper)
       end
 
